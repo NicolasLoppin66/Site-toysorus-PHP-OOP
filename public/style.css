@@ -1,0 +1,99 @@
+/* --- RESET --- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol, li {
+  list-style: none;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+#container {
+  background-image: url('img/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+
+}
+main {
+  width: 50%;
+  margin-top: 25px;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* --- BARRE DE MENU --- */
+
+#top-bar {
+  background: #0056af;
+  color:#fff;
+  display: flex;
+  margin-top: 15px;
+
+  width: 50%;
+  z-index: 1;
+}
+
+.menu-root {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  text-align: center;
+}
+
+.menu-root li {
+  border-right: 2px dashed #fff;
+  padding: 15px;
+  position: relative;
+}
+
+.menu-root li:hover {
+  background: #b9d1f3;
+}
+
+.menu-root li ul {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: inherit;
+}
+
+.menu-root li ul li{
+  background: #b9d1f3;
+  color:#000;
+  display: none;
+  flex-direction: column;
+  padding-left: 15px;
+  width: 100%;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.menu-root li:hover ul li {
+  display: block;
+  padding: 5px;
+  text-align: left;
+  z-index: 2;
+}
+
+.logout:hover i {
+  color:red;
+}
+
+
+
